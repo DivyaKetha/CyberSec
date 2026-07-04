@@ -60,6 +60,6 @@ Analyzed web_requests.log containing internal network traffic to Daikibo's telem
 - VPN/Network Security
 
 ---
-**Author:** [Your Name]  
-**Date:** [Date]  
+**Author:** Taraka Divya Ketha  
+**Date:** 28 June 2026  
 **Platform:** Forage / Deloitte Australia
