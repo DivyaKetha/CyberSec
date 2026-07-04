@@ -23,6 +23,8 @@ The primary task was to analyze web server logs to identify the root cause. My a
     *   Unusual data access times (e.g., after hours).
     *   Data exfiltration patterns (large data transfers).
     *   Unauthorized access attempts.
+    *   Repeated API calls at exact intervals
+      
 3.  **Pinpoint the Source:** Correlated suspicious activities to a specific user account.
 
 ### Part 3: Findings and Recommendation
