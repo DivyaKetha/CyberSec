@@ -42,4 +42,5 @@ Brute force attacks are detected using the following rule:
 - Simulated real-world incident triage workflow
 - Designed actionable security insights for analysts
 
-## 🎥 Video Walk-through Link: https://mega.nz/file/XlZSQSqD#jLJ3ooKFOBe3dGrKF0CCx5tVyR3ugLPpzaPByRwi8cc
+## 🎥 Video Walk-through Link:
+https://mega.nz/file/XlZSQSqD#jLJ3ooKFOBe3dGrKF0CCx5tVyR3ugLPpzaPByRwi8cc
