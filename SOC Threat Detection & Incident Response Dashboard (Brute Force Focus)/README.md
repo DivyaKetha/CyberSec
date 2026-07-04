@@ -35,7 +35,7 @@ Brute force attacks are detected using the following rule:
 - Data Visualization
 - Cybersecurity Concepts (SOC Operations)
 
-  ## 📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 - Built a SOC-style monitoring dashboard
 - Implemented brute force detection logic
