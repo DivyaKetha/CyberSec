@@ -143,12 +143,6 @@ Mastercard IT Support.
 
 ---
 
-## 📸 Screenshots
-
-[View screenshots](./screenshots/)
-
----
-
 ## 🏆 Certificate of Completion
 
 [View Certificate](./certificate.pdf)
