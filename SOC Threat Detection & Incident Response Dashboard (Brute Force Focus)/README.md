@@ -1,4 +1,3 @@
-🔹 Title
 # SOC Threat Detection & Incident Response Dashboard (Brute Force Focus)
 
 **Description:**
