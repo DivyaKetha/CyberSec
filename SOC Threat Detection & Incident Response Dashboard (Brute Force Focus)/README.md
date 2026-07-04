@@ -27,3 +27,16 @@ Brute force attacks are detected using the following rule:
 ## 📸 Dashboard Preview
 <img width="1365" height="767" alt="Screenshot 2026-07-04 172228" src="https://github.com/user-attachments/assets/3848ebb9-7a5b-4493-8ee4-ccb5456b4d57" />
 
+## 🛠️ Tools & Technologies
+
+- Splunk (SIEM)
+- SPL (Search Processing Language)
+- Data Visualization
+- Cybersecurity Concepts (SOC Operations)
+
+  ## 📚 Learning Outcomes
+
+- Built a SOC-style monitoring dashboard
+- Implemented brute force detection logic
+- Simulated real-world incident triage workflow
+- Designed actionable security insights for analysts
