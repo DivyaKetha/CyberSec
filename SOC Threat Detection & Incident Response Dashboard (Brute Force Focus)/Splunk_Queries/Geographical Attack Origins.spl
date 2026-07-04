@@ -1,0 +1,3 @@
+source="tutorialdata.zip:*" "Failed password" 
+| rex "from (?<ip>\d+\.\d+\.\d+\.\d+)" 
+| iplocation ip | stats count by Country | geom geo_countries featureIdField=Country

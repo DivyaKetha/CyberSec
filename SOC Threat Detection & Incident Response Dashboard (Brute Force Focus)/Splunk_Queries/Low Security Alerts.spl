@@ -1,0 +1,5 @@
+source="tutorialdata.zip:*" "Failed password" 
+| rex "from (?<ip>\d+\.\d+\.\d+\.\d+)" 
+| stats count as attempts by ip 
+| where attempts >5 AND attempts <=20
+| stats count as low_count
