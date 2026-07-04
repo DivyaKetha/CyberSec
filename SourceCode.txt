@@ -1,0 +1,887 @@
+{
+    "title": "SOC Threat Detection & Incident Response Dashboard (Brute Force Focus)",
+    "description": "Designed and developed a SOC Alert Triage Dashboard that identifies brute force attacks, prioritizes security alerts, and assists analysts in rapid incident response through intuitive visualizations and actionable insights.",
+    "inputs": {
+        "input_global_trp": {
+            "options": {
+                "defaultValue": "-24h@h,now",
+                "token": "global_time"
+            },
+            "title": "Global Time Range",
+            "type": "input.timerange"
+        }
+    },
+    "defaults": {
+        "dataSources": {
+            "ds.search": {
+                "options": {
+                    "queryParameters": {
+                        "earliest": "$global_time.earliest$",
+                        "latest": "$global_time.latest$"
+                    }
+                }
+            },
+            "ds.spl2": {
+                "options": {
+                    "queryParameters": {
+                        "earliest": "$global_time.earliest$",
+                        "latest": "$global_time.latest$"
+                    }
+                }
+            }
+        },
+        "visualizations": {
+            "global": {
+                "showProgressBar": true
+            }
+        }
+    },
+    "visualizations": {
+        "viz_23ewzbEb": {
+            "context": {
+                "backgroundColorEditorConfig": [
+                    {
+                        "to": 0,
+                        "value": "#118832"
+                    },
+                    {
+                        "from": 0,
+                        "value": "#669922"
+                    }
+                ],
+                "convertedColorRange": [
+                    {
+                        "from": 100,
+                        "value": "#dc4e41"
+                    },
+                    {
+                        "from": 70,
+                        "to": 100,
+                        "value": "#f1813f"
+                    },
+                    {
+                        "from": 30,
+                        "to": 70,
+                        "value": "#f8be34"
+                    },
+                    {
+                        "from": 0,
+                        "to": 30,
+                        "value": "#0877a6"
+                    },
+                    {
+                        "to": 0,
+                        "value": "#53a051"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_xGZfrxy4"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "> majorValue | rangeValue(backgroundColorEditorConfig)",
+                "numberPrecision": 0,
+                "shouldUseThousandSeparators": true,
+                "sparklineDisplay": "below",
+                "trendDisplay": "absolute",
+                "unitPosition": "after"
+            },
+            "title": "Total Events",
+            "type": "splunk.singlevalue"
+        },
+        "viz_NpIzau7w": {
+            "context": {
+                "dataColorsGradientConfig": {
+                    "colors": [
+                        "#ffffff",
+                        "#d41f1f"
+                    ]
+                }
+            },
+            "dataSources": {
+                "primary": "ds_HwEt9fh8"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "earliest": "auto",
+                        "latest": "auto",
+                        "newTab": true,
+                        "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| iplocation ip | stats count by Country | geom geo_countries featureIdField=Country \n| search $Country.name$",
+                        "type": "custom"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "#001D37",
+                "center": [
+                    29.99300228459296,
+                    58.8867187501279
+                ],
+                "layers": [
+                    {
+                        "choroplethOpacity": 0.85,
+                        "dataColors": "> areaValues | gradient(dataColorsGradientConfig)",
+                        "type": "choropleth"
+                    }
+                ],
+                "showBaseLayer": true,
+                "zoom": 2
+            },
+            "title": "Geographical Attack Origins",
+            "type": "splunk.map"
+        },
+        "viz_QqjwEwXj": {
+            "context": {
+                "backgroundColorEditorConfig": [
+                    {
+                        "to": 0,
+                        "value": "#118832"
+                    },
+                    {
+                        "from": 0,
+                        "value": "#cba700"
+                    }
+                ],
+                "convertedColorRange": [
+                    {
+                        "from": 100,
+                        "value": "#dc4e41"
+                    },
+                    {
+                        "from": 70,
+                        "to": 100,
+                        "value": "#f1813f"
+                    },
+                    {
+                        "from": 30,
+                        "to": 70,
+                        "value": "#f8be34"
+                    },
+                    {
+                        "from": 0,
+                        "to": 30,
+                        "value": "#0877a6"
+                    },
+                    {
+                        "to": 0,
+                        "value": "#53a051"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_ThLoN0bp"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "> majorValue | rangeValue(backgroundColorEditorConfig)",
+                "numberPrecision": 0,
+                "shouldUseThousandSeparators": true,
+                "sparklineDisplay": "below",
+                "trendDisplay": "absolute",
+                "unitPosition": "after"
+            },
+            "title": "Low Security Alerts",
+            "type": "splunk.singlevalue"
+        },
+        "viz_UmtqjtU1": {
+            "context": {
+                "backgroundColorEditorConfig": [
+                    {
+                        "to": 1,
+                        "value": "#118832"
+                    },
+                    {
+                        "from": 1,
+                        "value": "#d41f1f"
+                    }
+                ],
+                "convertedColorRange": [
+                    {
+                        "from": 100,
+                        "value": "#d41f1f"
+                    },
+                    {
+                        "from": 70,
+                        "to": 100,
+                        "value": "#f1813f"
+                    },
+                    {
+                        "from": 30,
+                        "to": 70,
+                        "value": "#f8be34"
+                    },
+                    {
+                        "from": 0,
+                        "to": 30,
+                        "value": "#0877a6"
+                    },
+                    {
+                        "to": 0,
+                        "value": "#53a051"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_FW07xNBE"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "> majorValue | rangeValue(backgroundColorEditorConfig)",
+                "numberPrecision": 0,
+                "shouldUseThousandSeparators": true,
+                "sparklineDisplay": "below",
+                "trendDisplay": "absolute",
+                "unitPosition": "after"
+            },
+            "title": "Critical Secuirty Alerts",
+            "type": "splunk.singlevalue"
+        },
+        "viz_VvCueNec": {
+            "dataSources": {
+                "primary": "ds_zceYPhCH"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "#001D37",
+                "dataValuesDisplay": "off",
+                "legendDisplay": "right",
+                "legendMode": "standard",
+                "legendTruncation": "ellipsisMiddle",
+                "lineWidth": 3,
+                "nullValueDisplay": "gaps",
+                "seriesColors": [
+                    "#7B56DB",
+                    "#0877a6",
+                    "#00CDAF",
+                    "#DD9900",
+                    "#FF677B",
+                    "#CB2196",
+                    "#813193",
+                    "#0051B5",
+                    "#008C80",
+                    "#99B100",
+                    "#FFA476",
+                    "#FF6ACE",
+                    "#AE8CFF",
+                    "#00689D",
+                    "#00490A",
+                    "#465D00",
+                    "#9D6300",
+                    "#F6540B",
+                    "#FF969E",
+                    "#E47BFE"
+                ],
+                "showIndependentYRanges": false,
+                "showOverlayY2Axis": false,
+                "showRoundedY2AxisLabels": false,
+                "showSplitSeries": false,
+                "showY2MajorGridLines": true,
+                "xAxisLabelRotation": 0,
+                "xAxisTitleText": "Day",
+                "xAxisTitleVisibility": "show",
+                "y2AxisAbbreviation": "auto",
+                "y2AxisScale": "linear",
+                "y2AxisTitleVisibility": "show",
+                "yAxisAbbreviation": "auto",
+                "yAxisScale": "linear",
+                "yAxisTitleText": "No. of Failed password events",
+                "yAxisTitleVisibility": "show"
+            },
+            "title": "Attack Timeline",
+            "type": "splunk.line"
+        },
+        "viz_f1j0sKAI": {
+            "context": {
+                "backgroundColorEditorConfig": [
+                    {
+                        "to": 0,
+                        "value": "#118832"
+                    },
+                    {
+                        "from": 0,
+                        "value": "#d97a0d"
+                    }
+                ],
+                "convertedColorRange": [
+                    {
+                        "from": 100,
+                        "value": "#dc4e41"
+                    },
+                    {
+                        "from": 70,
+                        "to": 100,
+                        "value": "#f1813f"
+                    },
+                    {
+                        "from": 30,
+                        "to": 70,
+                        "value": "#f8be34"
+                    },
+                    {
+                        "from": 0,
+                        "to": 30,
+                        "value": "#0877a6"
+                    },
+                    {
+                        "to": 0,
+                        "value": "#53a051"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_s0dtvQfs"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "> majorValue | rangeValue(backgroundColorEditorConfig)",
+                "numberPrecision": 0,
+                "shouldUseThousandSeparators": true,
+                "sparklineDisplay": "below",
+                "trendDisplay": "absolute",
+                "unitPosition": "after"
+            },
+            "title": "Medium Security Alerts",
+            "type": "splunk.singlevalue"
+        },
+        "viz_gv5pTl3T": {
+            "context": {
+                "riskColumnColorConfig": [
+                    {
+                        "match": "CRITICAL",
+                        "value": "#9E2520"
+                    },
+                    {
+                        "match": "HIGH",
+                        "value": "#D94E17"
+                    },
+                    {
+                        "match": "MEDIUM",
+                        "value": "#E3723A"
+                    },
+                    {
+                        "match": "LOW",
+                        "value": "#55C169"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_053jdIrv"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "#001D37",
+                "columnFormat": {
+                    "risk": {
+                        "rowBackgroundColors": "> table | seriesByName(\"risk\") | matchValue(riskColumnColorConfig)"
+                    }
+                },
+                "count": 10,
+                "dataOverlayMode": "none",
+                "drilldown": "none",
+                "showInternalFields": false,
+                "tableFormat": {
+                    "align": "center",
+                    "headerAlign": "center",
+                    "headerBackgroundColor": "> backgroundColor | setColorChannel(tableHeaderBackgroundColorConfig)",
+                    "headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)",
+                    "rowBackgroundColors": "> table | seriesByIndex(0) | pick(tableAltRowBackgroundColorsByBackgroundColor)",
+                    "rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)"
+                }
+            },
+            "title": "Triage Queue",
+            "type": "splunk.table"
+        },
+        "viz_nswhdQrW": {
+            "context": {
+                "backgroundColorEditorConfig": [
+                    {
+                        "to": 0,
+                        "value": "#118832"
+                    },
+                    {
+                        "from": 0,
+                        "value": "#d94e17"
+                    }
+                ],
+                "convertedColorRange": [
+                    {
+                        "from": 100,
+                        "value": "#dc4e41"
+                    },
+                    {
+                        "from": 70,
+                        "to": 100,
+                        "value": "#f1813f"
+                    },
+                    {
+                        "from": 30,
+                        "to": 70,
+                        "value": "#f8be34"
+                    },
+                    {
+                        "from": 0,
+                        "to": 30,
+                        "value": "#0877a6"
+                    },
+                    {
+                        "to": 0,
+                        "value": "#53a051"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_Fs1XUpvI"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "> majorValue | rangeValue(backgroundColorEditorConfig)",
+                "numberPrecision": 0,
+                "shouldUseThousandSeparators": true,
+                "sparklineDisplay": "below",
+                "trendDisplay": "absolute",
+                "unitPosition": "after"
+            },
+            "title": "High Security Alerts",
+            "type": "splunk.singlevalue"
+        },
+        "viz_w2yhSdWJ": {
+            "dataSources": {
+                "primary": "ds_CRh8XWYu"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "#001D37",
+                "dataValuesDisplay": "off",
+                "legendDisplay": "right",
+                "legendTruncation": "ellipsisMiddle",
+                "seriesColors": [
+                    "#7B56DB",
+                    "#009CEB",
+                    "#00CDAF",
+                    "#DD9900",
+                    "#FF677B",
+                    "#CB2196",
+                    "#813193",
+                    "#0051b5",
+                    "#008C80",
+                    "#99B100",
+                    "#FFA476",
+                    "#FF6ACE",
+                    "#AE8CFF",
+                    "#00689D",
+                    "#00490A",
+                    "#465D00",
+                    "#9D6300",
+                    "#F6540B",
+                    "#FF969E",
+                    "#E47BFE"
+                ],
+                "showIndependentYRanges": false,
+                "showOverlayY2Axis": false,
+                "showRoundedY2AxisLabels": false,
+                "showSplitSeries": false,
+                "showY2MajorGridLines": true,
+                "stackMode": "auto",
+                "xAxisLabelRotation": 0,
+                "xAxisTitleText": "IPs",
+                "xAxisTitleVisibility": "show",
+                "y2AxisAbbreviation": "auto",
+                "y2AxisScale": "linear",
+                "y2AxisTitleVisibility": "show",
+                "yAxisAbbreviation": "auto",
+                "yAxisScale": "linear",
+                "yAxisTitleText": "No. of Attempts",
+                "yAxisTitleVisibility": "show"
+            },
+            "title": "Top Attackers",
+            "type": "splunk.column"
+        },
+        "viz_zgNzPvyE": {
+            "dataSources": {
+                "primary": "ds_BM6509Hl"
+            },
+            "eventHandlers": [
+                {
+                    "options": {
+                        "newTab": true,
+                        "type": "auto"
+                    },
+                    "type": "drilldown.linkToSearch"
+                }
+            ],
+            "options": {
+                "backgroundColor": "#001D37",
+                "dataValuesDisplay": "off",
+                "legendDisplay": "right",
+                "legendTruncation": "ellipsisMiddle",
+                "showIndependentYRanges": false,
+                "showRoundedY2AxisLabels": false,
+                "showSplitSeries": false,
+                "showY2MajorGridLines": true,
+                "stackMode": "auto",
+                "xAxisTitleText": "IPs",
+                "xAxisTitleVisibility": "show",
+                "y2AxisAbbreviation": "auto",
+                "y2AxisTitleVisibility": "show",
+                "yAxisAbbreviation": "auto",
+                "yAxisScale": "linear",
+                "yAxisTitleVisibility": "show"
+            },
+            "title": "Brute Force Detection",
+            "type": "splunk.bar"
+        }
+    },
+    "dataSources": {
+        "ds_053jdIrv": {
+            "name": "Triage Queue search",
+            "options": {
+                "query": "index=main \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| rex \"for (?:invalid user )?(?<user>\\w+)\" \n| stats count as attempts by ip, user, _time | eval risk=case( attempts > 5, \"CRITICAL\", attempts>3, \"HIGH\", attempts>2, \"MEDIUM\", true(), \"LOW\") | where risk=\"CRITICAL\" OR risk=\"HIGH\" | table ip, user, _time, attempts, risk| sort -_time | head 20",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_BL9MSECq": {
+            "name": "High Alerts search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts > 50\n| stats count as critical_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_BM6509Hl": {
+            "name": "Brute Force Detection search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" (\"Failed password\" OR \"Accepted password\") \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count(eval(searchmatch(\"Failed password\"))) as failed, \n        count(eval(searchmatch(\"Accepted password\"))) as successful \nby ip \n| where failed > 10 AND successful > 0 | sort -failed",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_CRh8XWYu": {
+            "name": "Top Attackers search",
+            "options": {
+                "query": "index=main \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| sort -attempts \n| head 10",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_FW07xNBE": {
+            "name": "Critical Alerts search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts > 50 \n| stats count as critical_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_Fs1XUpvI": {
+            "name": "High Security Alerts search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts >30 AND attempts <=50\n| stats count as high_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_HwEt9fh8": {
+            "name": "Attack Map search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| iplocation ip | stats count by Country | geom geo_countries featureIdField=Country",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_QcqRKtQE": {
+            "name": "High Alerts search 2",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts > 20 AND attempts <= 50\n| stats count as high_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_ThLoN0bp": {
+            "name": "Low Security Alerts search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts >5 AND attempts <=20\n| stats count as low_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_UStzW45b": {
+            "name": "High Alerts search 3",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts > 20 AND attempts <= 50\n| stats count as critical_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_s0dtvQfs": {
+            "name": "Medium Security Alerts search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| rex \"from (?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)\" \n| stats count as attempts by ip \n| where attempts >20 AND attempts <=30\n| stats count as medium_count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "latest": "now",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_xGZfrxy4": {
+            "name": "Total Events - Single value search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" | stats count",
+                "queryParameters": {
+                    "earliest": "0",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_zceYPhCH": {
+            "name": "Attack Timeline search",
+            "options": {
+                "query": "source=\"tutorialdata.zip:*\" \"Failed password\" \n| timechart count",
+                "queryParameters": {
+                    "earliest": "1780252200",
+                    "latest": "1781116200",
+                    "sampleRatio": 1
+                }
+            },
+            "type": "ds.search"
+        }
+    },
+    "layout": {
+        "globalInputs": [
+            "input_global_trp"
+        ],
+        "layoutDefinitions": {
+            "layout_1": {
+                "options": {
+                    "backgroundColor": "#000919",
+                    "gutterSize": 10,
+                    "height": 960,
+                    "width": 1440
+                },
+                "structure": [
+                    {
+                        "item": "viz_UmtqjtU1",
+                        "position": {
+                            "h": 113,
+                            "w": 306,
+                            "x": 0,
+                            "y": 0
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_nswhdQrW",
+                        "position": {
+                            "h": 113,
+                            "w": 283,
+                            "x": 306,
+                            "y": 0
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_f1j0sKAI",
+                        "position": {
+                            "h": 113,
+                            "w": 279,
+                            "x": 589,
+                            "y": 0
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_QqjwEwXj",
+                        "position": {
+                            "h": 113,
+                            "w": 290,
+                            "x": 868,
+                            "y": 0
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_23ewzbEb",
+                        "position": {
+                            "h": 113,
+                            "w": 283,
+                            "x": 1158,
+                            "y": 0
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_VvCueNec",
+                        "position": {
+                            "h": 250,
+                            "w": 462,
+                            "x": 0,
+                            "y": 113
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_zgNzPvyE",
+                        "position": {
+                            "h": 250,
+                            "w": 515,
+                            "x": 462,
+                            "y": 113
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_w2yhSdWJ",
+                        "position": {
+                            "h": 250,
+                            "w": 464,
+                            "x": 977,
+                            "y": 113
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_gv5pTl3T",
+                        "position": {
+                            "h": 281,
+                            "w": 720,
+                            "x": 0,
+                            "y": 363
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_NpIzau7w",
+                        "position": {
+                            "h": 281,
+                            "w": 721,
+                            "x": 720,
+                            "y": 363
+                        },
+                        "type": "block"
+                    }
+                ],
+                "type": "grid"
+            }
+        },
+        "options": {},
+        "tabs": {
+            "items": [
+                {
+                    "label": "New tab",
+                    "layoutId": "layout_1"
+                }
+            ]
+        }
+    },
+    "applicationProperties": {
+        "hideEdit": false,
+        "hideExport": false
+    }
+}
