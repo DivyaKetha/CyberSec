@@ -1,7 +1,7 @@
 🔹 Title
 # SOC Threat Detection & Incident Response Dashboard (Brute Force Focus)
 
-***Description:***
+**Description:**
 
 This project simulates a real-world Security Operations Center (SOC) dashboard designed to detect, analyze, and respond to brute force attacks.
 
