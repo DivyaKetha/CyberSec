@@ -16,6 +16,7 @@ The dashboard enables analysts to quickly identify high-risk activities and take
 - 🌍 Geographical attack source tracking
 - 🧠 Brute force detection using threshold logic
 - 📋 Triage queue for incident investigation
+- 🔽 Added drilldowns for interactiveness 
   
 ## 🧠 Detection Logic
 
@@ -40,3 +41,5 @@ Brute force attacks are detected using the following rule:
 - Implemented brute force detection logic
 - Simulated real-world incident triage workflow
 - Designed actionable security insights for analysts
+
+## 🎥 Video Walk-through Link: https://mega.nz/file/XlZSQSqD#jLJ3ooKFOBe3dGrKF0CCx5tVyR3ugLPpzaPByRwi8cc
