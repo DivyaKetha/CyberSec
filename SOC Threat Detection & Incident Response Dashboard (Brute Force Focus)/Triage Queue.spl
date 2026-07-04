@@ -1,4 +1,0 @@
-index=main "Failed password" 
-| rex "from (?<ip>\d+\.\d+\.\d+\.\d+)" 
-| rex "for (?:invalid user )?(?<user>\w+)" 
-| stats count as attempts by ip, user, _time | eval risk=case( attempts > 5, "CRITICAL", attempts>3, "HIGH", attempts>2, "MEDIUM", true(), "LOW") | where risk="CRITICAL" OR risk="HIGH" | table ip, user, _time, attempts, risk| sort -_time | head 20
