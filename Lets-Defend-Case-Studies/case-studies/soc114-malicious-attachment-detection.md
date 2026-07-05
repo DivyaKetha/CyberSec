@@ -75,8 +75,8 @@ An email containing a malicious attachment was detected by the email gateway. Th
 
 | Field | Value |
 |-------|-------|
-| **User** | [Employee Name] |
-| **Department** | [Finance / Sales / etc.] |
+| **User** | richard |
+| **Client/Server** | client |
 | **Previous Alerts** | None |
 | **Likely Intent** | Unintentional (believed it was a legitimate invoice) |
 
