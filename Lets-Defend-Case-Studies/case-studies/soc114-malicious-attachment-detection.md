@@ -3,9 +3,13 @@
 **Platform:** LetsDefend
 
 **Date:** July 5, 2026
+
 **Severity:** HIGH
+
 **Event ID:** 45
+
 **Type:** Email Analysis / Malware Detection
+
 **Action:** ✅ Contained & Resolved
 
 ---
