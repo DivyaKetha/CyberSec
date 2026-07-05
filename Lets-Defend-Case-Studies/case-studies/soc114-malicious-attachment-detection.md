@@ -53,7 +53,7 @@ An email containing a malicious attachment was detected by the email gateway. Th
 | Hash Type | Value |
 |-----------|-------|
 | **MD5** | c9ad9506bcccfaa987ff9fc11b91698 |
-| **File Type** | MS PowerPoint Presentation |
+| **File Type** | CDFV2 Encrypted |
 | **SHA-256** | 44e65a641fb970031c5efed324676b5018803e0a768608d3e186152102615795 |
 
 **VirusTotal Results:**
