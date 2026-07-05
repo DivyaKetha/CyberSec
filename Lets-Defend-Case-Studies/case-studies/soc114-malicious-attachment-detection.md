@@ -44,7 +44,7 @@ An email containing a malicious attachment was detected by the email gateway. Th
 | **Sender** | accounting@cmail.carleton.ca |
 | **Recipient** | richard@letsdefend.io |
 | **Subject** | Invoice |
-| **File hash** | c9ad9506bcccfaa987ff9fc11b91698d|
+| **File hash** | c9ad9506bcccfaa987ff9fc11b91698d |
 
 ### Step 3: Attachment Analysis
 
@@ -52,7 +52,7 @@ An email containing a malicious attachment was detected by the email gateway. Th
 
 | Hash Type | Value |
 |-----------|-------|
-| **MD5** | c9ad9506bcccfaa987ff9fc11b91698 |
+| **MD5** | c9ad9506bcccfaa987ff9fc11b91698d |
 | **File Type** | CDFV2 Encrypted |
 | **SHA-256** | 44e65a641fb970031c5efed324676b5018803e0a768608d3e186152102615795 |
 
@@ -97,8 +97,8 @@ An email containing a malicious attachment was detected by the email gateway. Th
 
 | IOC Type | Value |
 |----------|-------|
-| **File Hash (MD5)** | [a1b2c3d4e5f6...] |
-| **File Hash (SHA-256)** | [a1b2c3d4e5f6...] |
+| **File Hash (MD5)** | c9ad9506bcccfaa987ff9fc11b91698d |
+| **File Hash (SHA-256)** | 44e65a641fb970031c5efed324676b5018803e0a768608d3e186152102615795 |
 | **Sender Domain** | andaluciabeach.net |
 | **Sender IP** | 5.135.143.133 |
 | **Malware Family** |  |
