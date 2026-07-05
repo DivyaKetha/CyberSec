@@ -44,10 +44,7 @@ An email containing a malicious attachment was detected by the email gateway. Th
 | **Sender** | accounting@cmail.carleton.ca |
 | **Recipient** | richard@letsdefend.io |
 | **Subject** | Invoice |
-| **Attachment** | [invoice_2345.exe] |
-| **File Type** | .exe (Executable) |
-| **File Size** | 245 KB |
-| **Detection** | Antivirus flagged as Trojan.Generic.12345 |
+| **File hash** | c9ad9506bcccfaa987ff9fc11b91698d|
 
 ### Step 3: Attachment Analysis
 
@@ -55,21 +52,23 @@ An email containing a malicious attachment was detected by the email gateway. Th
 
 | Hash Type | Value |
 |-----------|-------|
-| **MD5** | [a1b2c3d4e5f6...] |
-| **SHA-256** | [a1b2c3d4e5f6...] |
+| **MD5** | c9ad9506bcccfaa987ff9fc11b91698 |
+| **File Type** | MS PowerPoint Presentation |
+| **SHA-256** | 44e65a641fb970031c5efed324676b5018803e0a768608d3e186152102615795 |
 
 **VirusTotal Results:**
-- **Detection Rate:** 35/70 vendors flagged as malicious
-- **Common Name:** Trojan.Generic.12345
-- **Type:** Remote Access Trojan (RAT)
-- **Family:** [Emotet / Agent Tesla / etc.]
+- **Detection Rate:** 35/62 vendors flagged as malicious
+- **Popular threat labe:** trojan.abphisher/adwh
+- **Threat Categories:** trojan / phishing / downloader 
+- **Family Labels:** abphisher / adwh / cve201711882
+
 
 ### Step 4: Threat Intelligence Correlation
 
 | Tool | Finding |
 |------|---------|
 | **VirusTotal** | 35+ vendors flagged as malicious |
-| **AbuseIPDB** | Sender IP associated with known phishing campaigns |
+| **AbuseIPDB** | Sender IP associated with Brute Force-SSH activities |
 | **ANY.RUN** | Sandbox analysis confirmed malicious behavior |
 
 ### Step 5: User Context Analysis
@@ -100,10 +99,9 @@ An email containing a malicious attachment was detected by the email gateway. Th
 |----------|-------|
 | **File Hash (MD5)** | [a1b2c3d4e5f6...] |
 | **File Hash (SHA-256)** | [a1b2c3d4e5f6...] |
-| **File Name** | invoice_2345.exe |
-| **Sender Domain** | malicious-domain.com |
-| **Sender IP** | 185.x.x.x |
-| **Malware Family** | [Trojan.Generic.12345] |
+| **Sender Domain** | andaluciabeach.net |
+| **Sender IP** | 5.135.143.133 |
+| **Malware Family** |  |
 
 ### Evidence Collected
 - ✅ Email header analysis
@@ -173,7 +171,7 @@ An email containing a malicious attachment was detected by the email gateway. Th
 
 ---
 
-**Analyst:** [Your Name]  
+**Analyst:** Taraka Divya Ketha  
 **Date:** July 5, 2026  
 **Platform:** LetsDefend  
-**LinkedIn:** linkedin.com/in/[your-profile]
+**LinkedIn:** linkedin.com/in/tarakadivyaketha
