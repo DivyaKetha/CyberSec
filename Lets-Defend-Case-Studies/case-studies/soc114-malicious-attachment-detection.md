@@ -1,6 +1,7 @@
 # 🔍 SOC Case Study: Malicious Attachment Detection (SOC114)
 
 **Platform:** LetsDefend
+
 **Date:** July 5, 2026
 **Severity:** HIGH
 **Event ID:** 45
