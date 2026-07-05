@@ -41,9 +41,9 @@ An email containing a malicious attachment was detected by the email gateway. Th
 
 | Field | Value |
 |-------|-------|
-| **Sender** | [attacker@malicious-domain.com] |
-| **Recipient** | [employee@company.com] |
-| **Subject** | [Invoice #2345 - Urgent Payment Required] |
+| **Sender** | accounting@cmail.carleton.ca |
+| **Recipient** | richard@letsdefend.io |
+| **Subject** | Invoice |
 | **Attachment** | [invoice_2345.exe] |
 | **File Type** | .exe (Executable) |
 | **File Size** | 245 KB |
