@@ -17,7 +17,9 @@
 ## 📌 Incident Summary
 
 **Alert Triggered:** SOC114 - Malicious Attachment Detected
+
 **Source:** Email Gateway / Exchange Logs
+
 **Verdict:** ✅ TRUE POSITIVE
 
 ### Initial Findings
