@@ -1,3 +1,6 @@
+![Uploading Cover-image.png…]()
+
+
 # Cybersecurity Labs & Simulations
 
 This repository contains my hands-on work from various cybersecurity job simulations, case studies, and threat detection labs.
