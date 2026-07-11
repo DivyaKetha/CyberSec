@@ -1,4 +1,4 @@
-![Uploading Cover-image.png…]()
+<img width="1983" height="793" alt="Cover-image" src="https://github.com/user-attachments/assets/9f1a8422-617b-4dc9-bd09-c4d8fc962af1" />
 
 
 # Cybersecurity Labs & Simulations
