@@ -3,7 +3,7 @@
 
 # Cybersecurity Labs & Simulations
 
-This repository contains my hands-on work from various cybersecurity job simulations, case studies, and threat detection labs.
+This repository contains my hands-on work from various cybersecurity projects, job simulations, case studies, and threat detection labs.
 
  **Projects**:
  - *SOC Threat Detection & Incident Response Dashboard* >>   Monitoring and detection workflows using SOC tools and analysis using Splunk.
