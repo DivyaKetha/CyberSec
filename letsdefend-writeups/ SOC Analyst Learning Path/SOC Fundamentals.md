@@ -1,3 +1,6 @@
+<img width="806" height="323" alt="image" src="https://github.com/user-attachments/assets/c5aa84f4-2f16-448c-8e41-831c71e8f1b6" />
+
+
 # SOC Types and Roles
 - A Security Operation Center (SOC) is an information security team that continuously monitors and analyzes security of an organization.
 - Detect, analyze, respond using technology, people, and processes.
