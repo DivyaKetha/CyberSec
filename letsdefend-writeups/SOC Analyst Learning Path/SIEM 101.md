@@ -1,4 +1,5 @@
-<img width="806" height="323" alt="image" src="https://github.com/user-attachments/assets/fa9f35fa-9747-4ab7-995d-a51c4701a4cf" />
+  <img width="806" height="323" alt="image" src="https://github.com/user-attachments/assets/fa9f35fa-9747-4ab7-995d-a51c4701a4cf" />
+
 - A SIEM collects and interprets data then detects potential threats.
 - You can use Gartner to see most successful SIEM solutions.
 ## Log Collection
