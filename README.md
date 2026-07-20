@@ -5,17 +5,17 @@
 
 This repository contains my hands-on work from various cybersecurity job simulations, case studies, and threat detection labs.
 
- *Projects*:
- - **SOC Threat Detection & Incident Response Dashboard** – Monitoring and detection workflows using SOC tools and analysis.
+ **Projects**:
+ - *SOC Threat Detection & Incident Response Dashboard* – Monitoring and detection workflows using SOC tools and analysis.
  
 
  
- *Job simulations*:
-- **Deloitte-cyber-job-simulation** – Practical exercises covering cyber risk assessment and incident response.
-- - **Mastercard-Cybersecurity-Job-Simulation** – Simulated tasks focused on cybersecurity fundamentals and certificate handling.
+ **Job simulations**:
+- *Deloitte-cyber-job-simulation* – Practical exercises covering cyber risk assessment and incident response.
+- *Mastercard-Cybersecurity-Job-Simulation* – Simulated tasks focused on cybersecurity fundamentals and certificate handling.
 
 
 
-*letsdefend-platorm*:
-- **Lets-Defend-Case-Studies** – Real-world security case studies, including SOC114 malicious attachment detection.
-- **letsdefend-writeups** – Learnings from letsdefend platform including answers to labs within.
+**letsdefend-platorm**:
+- *Lets-Defend-Case-Studies* – Real-world security case studies, including SOC114 malicious attachment detection.
+- *letsdefend-writeups* – Learnings from letsdefend platform including answers to labs within.
