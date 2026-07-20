@@ -10,7 +10,7 @@ This repository contains my hands-on work from various cybersecurity job simulat
  
 
  
- **Job simulations**:
+ **Job simulations/Virtual experiences**:
 - *Deloitte-cyber-job-simulation* – Practical exercises covering cyber risk assessment and incident response.
 - *Mastercard-Cybersecurity-Job-Simulation* – Simulated tasks focused on cybersecurity fundamentals and certificate handling.
 
