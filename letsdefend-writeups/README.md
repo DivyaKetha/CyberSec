@@ -54,10 +54,6 @@ Each folder/course includes:
 
 ---
 
-*Focused on skills, not just course completion.*
-
----
-
 ## Why this repo?
 
 I’m preparing for a SOC Analyst role, so instead of just completing courses, I’m:
