@@ -24,29 +24,29 @@ Each folder/course includes:
 
 ## Progress
 
-| Course                            | Status |
-| --------------------------------- | :----: |
-| SOC Fundamentals                  |    ✅   |
-| Cyber Kill Chain                  |    🔄   |
-| MITRE ATT&CK Framework            |    🔄   |
-| Phishing Email Analysis           |    ✅   |
-| Detecting Web Attacks             |    🔄   |
-| Detecting Web Attacks - 2         |    🔄   |
-| How to Investigate a SIEM Alert?  |   ✅   |
-| Malware Analysis Fundamentals     |    ✅   |
-| Dynamic Malware Analysis          |    ✅   |
-| Malicious Document Analysis       |   🔄  |
-| Security Solutions                |    🔄   |
-| Network Log Analysis              |    🔄   |
-| SIEM 101                          |    ✅   |
-| Incident Management 101           |    ✅   |
-| Splunk                            |    ✅   |
-| Cyber Threat Intelligence         |    ✅   |
-| VirusTotal for SOC Analysts       |    ✅   |
-| IT Security Basics for Corporates |    ✅   |
-| Detecting Brute Force Attacks     |    ✅   |
-| Building a Malware Analysis Lab   |    ✅   |
-
+Progress
+#	Course	Status
+1	SOC Fundamentals	✅
+2	Cyber Kill Chain	✅
+3	MITRE ATT&CK Framework	✅
+4	Phishing Email Analysis	✅
+5	Detecting Web Attacks	✅
+6	Detecting Web Attacks - 2	✅
+7	How to Investigate a SIEM Alert?	🔄
+8	Malware Analysis Fundamentals	✅
+9	Dynamic Malware Analysis	✅
+10	Malicious Document Analysis	✅
+11	Security Solutions	✅
+12	Network Log Analysis	✅
+13	SIEM 101	✅
+14	Incident Management 101	✅
+15	Splunk	✅
+16	Cyber Threat Intelligence	✅
+17	VirusTotal for SOC Analysts	✅
+18	IT Security Basics for Corporates	✅
+19	Detecting Brute Force Attacks	✅
+20	Building a Malware Analysis Lab	✅
+21	Building a SOC Lab at Home	🔄
 ---
 
 ## Why this repo?
