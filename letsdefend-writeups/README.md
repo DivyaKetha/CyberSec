@@ -24,29 +24,37 @@ Each folder/course includes:
 
 ## Progress
 
-| #  | Course                            | Status |
-| -- | --------------------------------- | :----: |
-| 1  | SOC Fundamentals                  |    ✅   |
-| 2  | Cyber Kill Chain                  |    ✅   |
-| 3  | MITRE ATT&CK Framework            |    ✅   |
-| 4  | Phishing Email Analysis           |    ✅   |
-| 5  | Detecting Web Attacks             |    ✅   |
-| 6  | Detecting Web Attacks - 2         |    ✅   |
-| 7  | How to Investigate a SIEM Alert?  |   🔄   |
-| 8  | Malware Analysis Fundamentals     |    ✅   |
-| 9  | Dynamic Malware Analysis          |    ✅   |
-| 10 | Malicious Document Analysis       |    ✅   |
-| 11 | Security Solutions                |    ✅   |
-| 12 | Network Log Analysis              |    ✅   |
-| 13 | SIEM 101                          |    ✅   |
-| 14 | Incident Management 101           |    ✅   |
-| 15 | Splunk                            |    ✅   |
-| 16 | Cyber Threat Intelligence         |    ✅   |
-| 17 | VirusTotal for SOC Analysts       |    ✅   |
-| 18 | IT Security Basics for Corporates |    ✅   |
-| 19 | Detecting Brute Force Attacks     |    ✅   |
-| 20 | Building a Malware Analysis Lab   |    ✅   |
-| 21 | Building a SOC Lab at Home        |   🔄   |
+| #  | Course                           | Status | Skills Gained                      |
+| -- | -------------------------------- | :----: | ---------------------------------- |
+| 1  | SOC Fundamentals                 |    ✅   | SOC workflow, alert lifecycle      |
+| 2  | Cyber Kill Chain                 |    ✅   | Attack stages understanding        |
+| 3  | MITRE ATT&CK Framework           |    ✅   | Technique mapping                  |
+| 4  | Phishing Email Analysis          |    ✅   | Email analysis, phishing detection |
+| 5  | Detecting Web Attacks            |    ✅   | SQLi, XSS, log patterns            |
+| 6  | Detecting Web Attacks - 2        |    ✅   | Advanced web attack detection      |
+| 7  | Investigate Web Attack           |   🔄   | Investigation workflow             |
+| 8  | How to Investigate a SIEM Alert? |   🔄   | Alert triage, correlation          |
+| 9  | Malware Analysis Fundamentals    |    ✅   | Static analysis basics             |
+| 10 | SA - Malware - Event ID: 77      |   🔄   | Malware alert investigation        |
+| 11 | Dynamic Malware Analysis         |    ✅   | Behavioral analysis                |
+| 12 | MSHTML                           |   🔄   | Exploit understanding              |
+| 13 | Malicious Document Analysis      |    ✅   | Macro + document analysis          |
+| 14 | Security Solutions               |    ✅   | Security tools overview            |
+| 15 | Network Log Analysis             |    ✅   | Log investigation                  |
+| 16 | SIEM 101                         |    ✅   | SIEM fundamentals                  |
+| 17 | Incident Management 101          |    ✅   | Incident lifecycle                 |
+| 18 | Splunk                           |    ✅   | Querying, dashboards               |
+| 19 | Cyber Threat Intelligence        |    ✅   | IOC usage                          |
+| 20 | VirusTotal for SOC Analysts      |    ✅   | IOC validation                     |
+| 21 | SA - Malware - Event ID: 76      |   🔄   | Alert investigation                |
+| 22 | IT Security Basis for Corporates |    ✅   | Security basics                    |
+| 23 | Detecting Brute Force Attacks    |    ✅   | Authentication attack detection    |
+| 24 | Building a Malware Analysis Lab  |    ✅   | Lab setup                          |
+| 25 | Building a SOC Lab at Home       |   🔄   | SOC environment setup              |
+
+---
+
+*Focused on skills, not just course completion.*
 
 ---
 
