@@ -27,17 +27,17 @@ Each folder/course includes:
 | Course                            | Status |
 | --------------------------------- | :----: |
 | SOC Fundamentals                  |    ✅   |
-| Cyber Kill Chain                  |    ✅   |
-| MITRE ATT&CK Framework            |    ✅   |
+| Cyber Kill Chain                  |    🔄   |
+| MITRE ATT&CK Framework            |    🔄   |
 | Phishing Email Analysis           |    ✅   |
-| Detecting Web Attacks             |    ✅   |
-| Detecting Web Attacks - 2         |    ✅   |
-| How to Investigate a SIEM Alert?  |   🔄   |
+| Detecting Web Attacks             |    🔄   |
+| Detecting Web Attacks - 2         |    🔄   |
+| How to Investigate a SIEM Alert?  |   ✅   |
 | Malware Analysis Fundamentals     |    ✅   |
 | Dynamic Malware Analysis          |    ✅   |
-| Malicious Document Analysis       |    ✅   |
-| Security Solutions                |    ✅   |
-| Network Log Analysis              |    ✅   |
+| Malicious Document Analysis       |   🔄  |
+| Security Solutions                |    🔄   |
+| Network Log Analysis              |    🔄   |
 | SIEM 101                          |    ✅   |
 | Incident Management 101           |    ✅   |
 | Splunk                            |    ✅   |
