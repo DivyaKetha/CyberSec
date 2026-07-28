@@ -13,4 +13,4 @@ Investigated a high-severity simulated phishing attack on the LetsDefend SOC pla
 Incident triage · Threat intelligence validation · MITRE ATT&CK mapping · Endpoint containment procedures
 
 ## Case Study Notes
-[Link to or embed your actual case study writeup/screenshots here]
+
