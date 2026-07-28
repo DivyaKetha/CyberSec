@@ -30,7 +30,7 @@ Built a Splunk-based brute force detection dashboard correlating authentication 
 `SIEM (Splunk)` `Log Analysis` `Incident Response` `MITRE ATT&CK` `Threat Intelligence` `Network Traffic Analysis (Wireshark)` `Web App Security (Burp Suite)` `Active Directory` `Linux (Kali)`
 
 ## 📫 Connect
-- LinkedIn: [your-linkedin-url]
+- LinkedIn: linkedin.com/in/tarakadivyaketha
 - Resume: available on request
 
 ---
