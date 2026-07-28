@@ -1,6 +1,7 @@
+<img width="700" height="114" alt="image" src="https://github.com/user-attachments/assets/827e8ee9-0896-4322-9735-ec46ae594989" />
 
 
-<img width="700" height="114" alt="image" src="imghttps://app.letsdefend.io/images/hb_logo" />
+<img width="700" height="114" alt="image" src="https://app.letsdefend.io/images/hb_logo" />
 
 # LetsDefend SOC Learning Path — My Notes
 
