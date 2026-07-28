@@ -1,6 +1,4 @@
-<img width="705" height="157" alt="image" src="https://github.com/user-attachments/assets/4dcec768-a07b-4e47-9c83-e6960a321714" />
-
-
+<img width="700" height="114" alt="image" src="https://github.com/user-attachments/assets/ab7e9957-a385-48b1-b0f8-57193c184c56" />
 
 # Deloitte Cyber Job Simulation - Data Breach Investigation
 
