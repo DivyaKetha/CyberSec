@@ -21,8 +21,8 @@ Built a Splunk-based brute force detection dashboard correlating authentication 
 | Folder | Description |
 |---|---|
 | [`soc-threat-detection-dashboard`](./soc-threat-detection-dashboard) | Splunk SIEM dashboard for brute-force attack detection |
-| [`Deloitte-cyber-job-simulation`](./deloitte-cyber-job-simulation) | Deloitte (Forage) cybersecurity job simulation — log analysis & threat detection |
-| [`Mastercard-cybersecurity-job-simulation`](./mastercard-cybersecurity-job-simulation) | Mastercard (Forage) cybersecurity fundamentals simulation |
+| [`Deloitte-cyber-job-simulation`](./Deloitte-cyber-job-simulation) | Deloitte (Forage) cybersecurity job simulation — log analysis & threat detection |
+| [`Mastercard-Cybersecurity-Job-Simulation`](./Mastercard-Cybersecurity-Job-Simulation) | Mastercard (Forage) cybersecurity fundamentals simulation |
 | [`Letsdefend-case-studies`](./letsdefend-case-studies) | Real-world SOC incident case studies solved on LetsDefend |
 | [`letsdefend-writeups`](./letsdefend-writeups) | Lab notes and learnings from LetsDefend platform |
 
