@@ -55,7 +55,7 @@ Analyzed web_requests.log containing internal network traffic to Daikibo's telem
 - 💼 Client Communication
 
 ## Certificate
-[View Certificate](./certificate.pdf)
+[View Certificate](./Certificate.pdf)
 
 ## Technologies
 - Web Activity Logs
