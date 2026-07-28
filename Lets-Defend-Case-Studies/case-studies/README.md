@@ -13,4 +13,4 @@ Investigated a high-severity simulated phishing attack on the LetsDefend SOC pla
 Incident triage · Threat intelligence validation · MITRE ATT&CK mapping · Endpoint containment procedures
 
 ## Case Study Notes
-
+[SOC-114: Mallicious Attachment Detection](./soc114-malicious-attachment-detection.md)
