@@ -1,4 +1,4 @@
-<img width="256" height="199" alt="image" src="https://github.com/user-attachments/assets/7a253c49-a0f1-426a-b681-7930072c117c" />
+<img width="978" height="222" alt="image" src="https://github.com/user-attachments/assets/4ffec110-670c-4506-acd1-a38342e24e92" />
 
 
 # Mastercard Cybersecurity Job Simulation - Phishing Email Design
