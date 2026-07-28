@@ -156,8 +156,7 @@ Mastercard IT Support.
 
 ## 🔗 Resources
 
-- [Mastercard Cybersecurity Program](https://www.mastercard.com)
-- [Anti-Phishing Working Group](https://apwg.org)
+- [Mastercard Cybersecurity Program]([https://www.theforage.com/simulations/mastercard/cybersecurity-t8ye])
 - [Phishing Email Analysis Guide](./phishing-email-analysis.md)
 
 ---
