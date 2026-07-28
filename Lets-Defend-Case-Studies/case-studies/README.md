@@ -1,3 +1,5 @@
+<img width="1000" height="421" alt="image" src="https://github.com/user-attachments/assets/9d7212ef-f24f-48bf-b165-92f2bc7a3f14" />
+
 # LetsDefend Case Studies — Phishing Incident Investigation
 
 ## Overview
