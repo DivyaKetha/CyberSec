@@ -1,3 +1,7 @@
+
+
+<img width="700" height="114" alt="image" src="imghttps://app.letsdefend.io/images/hb_logo.svg" />
+
 # LetsDefend SOC Learning Path — My Notes
 
 This repo contains my personal notes and write-ups from the LetsDefend SOC Analyst Learning Path.
