@@ -264,3 +264,16 @@ Hint: Data deletion is a final destructive action — that's Actions on Objectiv
 
 
 
+
+
+
+
+
+⚠️ DISCLAIMER: This document is for personal educational purposes only. 
+Content is based on LetsDefend training material. I do not own this content. 
+Not for commercial use or distribution. Unauthorized misuse will result in 
+appropriate action. All rights belong to LetsDefend.
+
+
+
+
