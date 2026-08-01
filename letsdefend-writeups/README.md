@@ -1,4 +1,4 @@
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/a6258e7d-0a9e-450d-9167-84b9f77dc5e4" />
+<img width="1481" height="743" alt="image" src="https://github.com/user-attachments/assets/dddfa55f-5e26-49e2-a430-8cec12908c89" />
 
 
 # LetsDefend SOC Learning Path — My Notes
