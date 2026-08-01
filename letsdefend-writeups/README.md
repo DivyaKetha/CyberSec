@@ -88,3 +88,11 @@ If it helps you too, that’s a bonus.
 ---
 
 *Learning > collecting certificates.*
+
+---
+
+
+⚠️ DISCLAIMER: This document is for personal educational purposes only. 
+Content is based on LetsDefend training material. I do not own this content. 
+Not for commercial use or distribution. Unauthorized misuse will result in 
+appropriate action. All rights belong to LetsDefend.
