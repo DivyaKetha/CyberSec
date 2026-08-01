@@ -19,7 +19,9 @@ Helps SOC analysts understand attack stages, identify where attacks occur, deter
 
 **Questions**  
 Q: How many steps does the Cyber Kill Chain model consist of?  
-```  7  ```
+```
+7
+```
 Hint: The model has 7 sequential steps.
 
 ---
