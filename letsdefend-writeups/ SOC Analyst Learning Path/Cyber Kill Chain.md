@@ -238,4 +238,3 @@ A: 7. (Actions on Objectives — data destruction.)
 
 ---
 
-Ready for the next module! Send it over.
