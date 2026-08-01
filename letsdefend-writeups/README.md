@@ -1,5 +1,3 @@
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5b69febd-ea39-4d31-8a11-2fc288fdf003" />
-
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/69900a94-29dd-4854-9777-9a56c62872bd" />
 
 # LetsDefend SOC Learning Path — My Notes
