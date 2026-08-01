@@ -68,7 +68,9 @@ First step of Cyber Kill Chain. Attacker gathers information about target system
 
 **Questions**  
 Q: What is the step in the Cyber Kill Chain model where the information gathering takes place?  
-A: Reconnaissance  
+```
+Reconnaissance  
+```
 Hint: This is the first step where attackers collect intel.
 
 ---
@@ -77,7 +79,9 @@ Hint: This is the first step where attackers collect intel.
 **Scenario:** APT38 targeted financial institution. Reconnaissance for several days on website. Found CVE-2019-0604 in Microsoft SharePoint. Exploited it. Deployed Powershell Empire backdoor.
 
 Q: Based solely on this information, what is the number of distinct actions taken during the "Reconnaissance" phase? (Each sentence = separate action; enter numerical value)  
-A: 3  
+```
+ 3  
+```
 Hint: Count only reconnaissance-related actions — conducting recon on website, finding CVE, identifying SharePoint usage.
 
 ---
@@ -103,7 +107,9 @@ Second step. Attacker uses recon info to prepare attack tools/scripts. Attack ha
 **Scenario:** APT group targeted telecom. Collected emails from social media/open sources. Created phishing template. Created "Salaries.docx" with malicious macro. Sent phishing email. Victim viewed email and downloaded doc. Opened doc, macro ran. Ransomware installed via PowerShell.
 
 Q: How many separate activities were performed in the "Weaponization" phase? (Each statement = separate action; enter numerical value)  
-A: 2  
+```
+2  
+```
 Hint: Count only preparation actions — creating phishing template and creating malicious document.
 
 ---
@@ -135,7 +141,9 @@ Third step. Attacker executes the cyber attack — first interaction with victim
 **Scenario:** APT targeted defense sector. Detected IPs via Shodan/Zoomeye. Learned organization uses Windows. Embedded malware in putty.exe using Metasploit. Transferred malware to USB sticks. Left USB sticks on sidewalk. Employee plugged USB into company computer. Executed putty.exe. Attacker got reverse connection and ran remote commands. Added scheduled task for persistence. EDR flagged it. SOC analyst detected alert, took action, stopped attack.
 
 Q: How many different actions were performed in the "Delivery" phase? (Each statement = separate action; enter numerical value)  
-A: 2  
+```
+ 2  
+```
 Hint: Count only transmission actions — transferring malware to USB and leaving USB sticks.
 
 ---
@@ -187,7 +195,9 @@ Fifth step. Attacker establishes persistence on compromised system. Installs bac
 **Scenario:** EDR detected malware on a machine. SOC analyst determined malware had not been executed and no malicious activity occurred.
 
 Q: In which step of the Cyber Kill Chain did the attacker fail, leading to detection? (Enter numerical value)  
-A: 4  
+```
+ 4  
+```
 Hint: Malware was delivered but never ran — that's the exploitation step.
 
 ---
@@ -211,7 +221,9 @@ Sixth step. Attacker sets up C2 server to send remote commands to compromised sy
 **Scenario:** During network monitoring, analyst observed Windows machine connect to suspicious external IP. Deduced attacker could execute remote commands.
 
 Q: What is the final Cyber Kill Chain step in which the attacker succeeded? (Enter numerical value)  
-A: 6  
+```
+ 6  
+```
 Hint: Connection established means C2 communication succeeded; final objectives not yet executed.
 
 ---
@@ -240,11 +252,13 @@ Seventh and final step. Attacker executes the planned final actions. Activities 
 ---
 
 **Questions**  
-Q: At what stage of the Cyber Kill Chain did the APT group "Cobalt Group" use the Sdelete tool to delete data? (Enter numerical value)  
-A: 7  
+```
+ 7  
+```
 Hint: Data deletion is a final destructive action — that's Actions on Objectives.
 
 ---
+
 
 
 
