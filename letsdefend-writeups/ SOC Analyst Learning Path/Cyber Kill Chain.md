@@ -1,26 +1,5 @@
 <img width="806" height="323" alt="image" src="https://github.com/user-attachments/assets/f0dca879-c191-453d-b8a9-49b9aafeee8e" />
-Got it! I understand now — you want me to follow **the exact same format** you used when sending the lessons, but:
 
-- Keep content **minimal** (only the essential/important points)
-- Put the **Q&A section right under each lesson** (not all at the end)
-- No extra fluff, no lengthy paragraphs — just the core takeaways
-
-So the structure will be:
-
----
-
-**Lesson Title**  
-*(Brief, minimal summary — just key facts)*  
-
-**Questions**  
-Q: Question text?  
-A: Answer.
-
----
-
-Here's your **Intro to Cyber Kill Chain** module redone in that format:
-
----
 
 # Introduction to Cyber Kill Chain
 
